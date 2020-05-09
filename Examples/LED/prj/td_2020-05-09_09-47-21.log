@@ -1,0 +1,1507 @@
+============================================================
+   Tang Dynasty, V4.6.14314
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/bin/td
+   Built by =   ghost_20
+   Built at =   2019, Sep 20
+   Run by =     ghost_20
+   Run Date =   Sat May  9 09:47:21 2020
+
+   Run on =     ares0
+============================================================
+RUN-1002 : start command "open_project project.al"
+HDL-1007 : analyze verilog file ../src/top.v
+RUN-1002 : start command "import_device eagle_s20.db -package BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicated  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicated  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+HDL-1007 : analyze verilog file ../src/top.v
+HDL-1007 : analyze verilog file ../src/top.v
+HDL-1007 : analyze verilog file ../src/top.v
+RUN-1002 : start command "elaborate -top top"
+HDL-1007 : elaborate module top in ../src/top.v(1)
+HDL-1200 : Current top model is top
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc ../const/io.adc"
+RUN-1002 : start command "set_pin_assignment CLK_IN  LOCATION = K14; "
+USR-8052 ERROR: Cannot find pin CLK_IN in the model top.
+USR-8064 ERROR: Read ../const/io.adc error-out.
+GUI-8309 ERROR: Failed to read adc ../const/io.adc.
+HDL-1007 : analyze verilog file ../src/top.v
+HDL-8007 ERROR: syntax error near ')' in ../src/top.v(6)
+HDL-1007 : Verilog file '../src/top.v' ignored due to errors
+HDL-1007 : analyze verilog file ../src/top.v
+HDL-8007 ERROR: syntax error near ')' in ../src/top.v(6)
+HDL-1007 : Verilog file '../src/top.v' ignored due to errors
+HDL-1007 : analyze verilog file ../src/top.v
+HDL-1007 : analyze verilog file ../src/top.v
+RUN-1002 : start command "elaborate -top top"
+HDL-1007 : elaborate module top in ../src/top.v(1)
+HDL-1200 : Current top model is top
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc ../const/io.adc"
+RUN-1002 : start command "set_pin_assignment CLK_IN  LOCATION = K14; "
+RUN-1002 : start command "set_pin_assignment RST_N  LOCATION = K16; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[0]   LOCATION = R3; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[1]   LOCATION = J14;"
+RUN-1002 : start command "set_pin_assignment  RGB_LED[2]   LOCATION = P3;"
+USR-8027 ERROR: Location P3 is for dedicated pin! Choose another pin for normal use.
+USR-8064 ERROR: Read ../const/io.adc error-out.
+GUI-8309 ERROR: Failed to read adc ../const/io.adc.
+HDL-1007 : analyze verilog file ../src/top.v
+RUN-1002 : start command "elaborate -top top"
+HDL-1007 : elaborate module top in ../src/top.v(1)
+HDL-1200 : Current top model is top
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc ../const/io.adc"
+RUN-1002 : start command "set_pin_assignment CLK_IN  LOCATION = K14; "
+RUN-1002 : start command "set_pin_assignment RST_N  LOCATION = K16; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[0]   LOCATION = R3; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[1]   LOCATION = J14;"
+RUN-1002 : start command "set_pin_assignment  RGB_LED[2]   LOCATION = P13;"
+RUN-1002 : start command "set_pin_assignment  SD_CMD   LOCATION = H14;"
+USR-8052 ERROR: Cannot find pin SD_CMD in the model top.
+USR-8064 ERROR: Read ../const/io.adc error-out.
+GUI-8309 ERROR: Failed to read adc ../const/io.adc.
+HDL-1007 : analyze verilog file ../src/top.v
+RUN-1002 : start command "elaborate -top top"
+HDL-1007 : elaborate module top in ../src/top.v(1)
+HDL-1200 : Current top model is top
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc ../const/io.adc"
+RUN-1002 : start command "set_pin_assignment RST_N  LOCATION = K16; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[0]   LOCATION = R3; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[1]   LOCATION = J14;"
+RUN-1002 : start command "set_pin_assignment  RGB_LED[2]   LOCATION = P13;"
+USR-6010 WARNING: ADC constraints: pin CLK_IN has no constraint.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "top"
+SYN-1011 : Flatten model top
+SYN-1014 : Optimize round 1
+SYN-1032 : 3/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "report_area -file project_rtl.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     5
+  #input                2
+  #output               3
+  #inout                0
+
+RUN-1001 : 
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |top    |0      |0      |0      |
++-----------------------------------------+
+
+RUN-1002 : start command "export_db project_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea project_gate.area"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+SYN-2001 : Map 5 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 7/3 useful/useless nets, 7/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 7/1 useful/useless nets, 7/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 7/1 useful/useless nets, 7/1 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-3001 : Logic optimization runtime opt =   0.01 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
+SYN-1001 : Packing model "top" ...
+SYN-4010 : Pack lib has 42 rtl pack models with 15 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 7/0 useful/useless nets, 7/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "top" (AL_USER_NORMAL) with 0/7 primitive instances ...
+RUN-1002 : start command "report_area -file project_gate.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     5
+  #input                2
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                    0   out of  19600    0.00%
+#reg                    0   out of  19600    0.00%
+#le                     0
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    5   out of    188    2.66%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++--------------------------------------+
+|Instance |Module |le    |lut   |seq   |
++--------------------------------------+
+|top      |top    |0     |0     |0     |
++--------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model top
+RUN-1002 : start command "export_db project_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+PHY-3001 : Placer runs in 4 thread(s).
+SYN-4026 : Tagged 0 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 7 instances
+RUN-1001 : 0 mslices, 0 lslices, 5 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 7 nets
+RUN-1001 : 6 nets have 2 pins
+RUN-1001 : 1 nets have [3 - 5] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 6 instances, 0 slices, 0 macros(0 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model top.
+TMR-2506 : Build timing graph completely. Port num: 3, tpin num: 12, tnet num: 6, tinst num: 6, tnode num: 12, tedge num: 8.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 7 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 6 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 0 clock pins, and constraint 0 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.024062s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (41.6%)
+
+PHY-3001 : End placement; No cells to be placed.
+RUN-1002 : start command "route"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 0 to 0
+PHY-1001 : Route runs in 4 thread(s)
+RUN-1001 : There are total 7 instances
+RUN-1001 : 0 mslices, 0 lslices, 5 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 7 nets
+RUN-1001 : 6 nets have 2 pins
+RUN-1001 : 1 nets have [3 - 5] pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 4 thread ...
+PHY-1002 : len = 784, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.014673s wall, 0.020000s user + 0.000000s system = 0.020000s CPU (136.3%)
+
+PHY-1001 : End global routing;  0.136918s wall, 0.150000s user + 0.000000s system = 0.150000s CPU (109.6%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 0, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000019s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 0, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000021s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 14% nets.
+PHY-1002 : len = 752, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 752
+PHY-1001 : End Routed; 0.238396s wall, 0.260000s user + 0.000000s system = 0.260000s CPU (109.1%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  11.741935s wall, 11.710000s user + 0.450000s system = 12.160000s CPU (103.6%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  11.963353s wall, 11.940000s user + 0.460000s system = 12.400000s CPU (103.6%)
+
+RUN-1004 : used memory is 135 MB, reserved memory is 430 MB, peak memory is 430 MB
+RUN-1002 : start command "report_area -io_info -file project_phy.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     5
+  #input                2
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                    0   out of  19600    0.00%
+#reg                    0   out of  19600    0.00%
+#le                     0
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    4   out of    188    2.13%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db project_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit project.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances completely, inst num: 7
+BIT-1002 : Init pips completely, net num: 7, pip num: 20
+BIT-1003 : Multithreading accelaration with 4 threads.
+BIT-1003 : Generate bitstream completely, there are 50 valid insts, and 74 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file project.bit.
+HDL-1007 : analyze verilog file ../src/top.v
+HDL-1007 : analyze verilog file ../src/top.v
+RUN-1002 : start command "elaborate -top top"
+HDL-1007 : elaborate module top in ../src/top.v(1)
+HDL-1200 : Current top model is top
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc ../const/io.adc"
+RUN-1002 : start command "set_pin_assignment RST_N  LOCATION = K16; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[0]   LOCATION = R3; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[1]   LOCATION = J14;"
+RUN-1002 : start command "set_pin_assignment  RGB_LED[2]   LOCATION = P13;"
+USR-6010 WARNING: ADC constraints: pin CLK_IN has no constraint.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "top"
+SYN-5013 WARNING: Undriven net: model "top" / net "RGB_LED[1]" in ../src/top.v(4)
+SYN-5014 WARNING: the net's pin: pin "RGB_LED[1]" in ../src/top.v(4)
+SYN-5013 WARNING: Undriven net: model "top" / net "RGB_LED[2]" in ../src/top.v(4)
+SYN-5014 WARNING: the net's pin: pin "RGB_LED[2]" in ../src/top.v(4)
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1011 : Flatten model top
+SYN-1014 : Optimize round 1
+SYN-1032 : 3/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "report_area -file project_rtl.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     5
+  #input                2
+  #output               3
+  #inout                0
+
+RUN-1001 : 
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |top    |0      |0      |0      |
++-----------------------------------------+
+
+RUN-1002 : start command "export_db project_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea project_gate.area"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+SYN-2001 : Map 5 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 7/4 useful/useless nets, 7/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 7/1 useful/useless nets, 7/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 7/1 useful/useless nets, 7/1 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
+SYN-1001 : Packing model "top" ...
+SYN-4010 : Pack lib has 42 rtl pack models with 15 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 7/0 useful/useless nets, 7/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "top" (AL_USER_NORMAL) with 0/7 primitive instances ...
+RUN-1002 : start command "report_area -file project_gate.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     5
+  #input                2
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                    0   out of  19600    0.00%
+#reg                    0   out of  19600    0.00%
+#le                     0
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    5   out of    188    2.66%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++--------------------------------------+
+|Instance |Module |le    |lut   |seq   |
++--------------------------------------+
+|top      |top    |0     |0     |0     |
++--------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model top
+RUN-1002 : start command "export_db project_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+PHY-3001 : Placer runs in 4 thread(s).
+SYN-4026 : Tagged 0 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 7 instances
+RUN-1001 : 0 mslices, 0 lslices, 5 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 7 nets
+RUN-1001 : 6 nets have 2 pins
+RUN-1001 : 1 nets have [3 - 5] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 6 instances, 0 slices, 0 macros(0 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model top.
+TMR-2506 : Build timing graph completely. Port num: 3, tpin num: 12, tnet num: 6, tinst num: 6, tnode num: 12, tedge num: 8.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 7 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 6 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 0 clock pins, and constraint 0 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.003370s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : End placement; No cells to be placed.
+RUN-1002 : start command "route"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 0 to 0
+PHY-1001 : Route runs in 4 thread(s)
+RUN-1001 : There are total 7 instances
+RUN-1001 : 0 mslices, 0 lslices, 5 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 7 nets
+RUN-1001 : 6 nets have 2 pins
+RUN-1001 : 1 nets have [3 - 5] pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 4 thread ...
+PHY-1002 : len = 784, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.014599s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (68.5%)
+
+PHY-1001 : End global routing;  0.162971s wall, 0.170000s user + 0.010000s system = 0.180000s CPU (110.4%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 0, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000019s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 0, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000021s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 14% nets.
+PHY-1002 : len = 752, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 752
+PHY-1001 : End Routed; 0.235769s wall, 0.240000s user + 0.000000s system = 0.240000s CPU (101.8%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  1.506404s wall, 1.330000s user + 0.240000s system = 1.570000s CPU (104.2%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  1.758429s wall, 1.600000s user + 0.250000s system = 1.850000s CPU (105.2%)
+
+RUN-1004 : used memory is 138 MB, reserved memory is 438 MB, peak memory is 438 MB
+RUN-1002 : start command "report_area -io_info -file project_phy.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     5
+  #input                2
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                    0   out of  19600    0.00%
+#reg                    0   out of  19600    0.00%
+#le                     0
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    4   out of    188    2.13%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db project_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit project.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances completely, inst num: 7
+BIT-1002 : Init pips completely, net num: 7, pip num: 24
+BIT-1003 : Multithreading accelaration with 4 threads.
+BIT-1003 : Generate bitstream completely, there are 50 valid insts, and 78 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file project.bit.
+RUN-1002 : start command "download -bit project.bit -mode jtag -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit project.bit"
+PRG-3000 : BIT2VEC::JtagBitstream: completed! line_num = 1354, frame_num = 1259
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit project.bit" in  2.649359s wall, 2.560000s user + 0.130000s system = 2.690000s CPU (101.5%)
+
+RUN-1004 : used memory is 200 MB, reserved memory is 438 MB, peak memory is 438 MB
+RUN-1002 : start command "program -cable 0 -spd 6 -p"
+RUN-1003 : finish command "program -cable 0 -spd 6 -p" in  13.739910s wall, 0.580000s user + 0.840000s system = 1.420000s CPU (10.3%)
+
+RUN-1004 : used memory is 171 MB, reserved memory is 438 MB, peak memory is 438 MB
+RUN-1003 : finish command "download -bit project.bit -mode jtag -spd 6 -sec 64 -cable 0" in  16.843272s wall, 3.170000s user + 1.000000s system = 4.170000s CPU (24.8%)
+
+RUN-1004 : used memory is 161 MB, reserved memory is 438 MB, peak memory is 438 MB
+GUI-1001 : Download success!
+HDL-1007 : analyze verilog file ../src/top.v
+HDL-1007 : analyze verilog file ../src/top.v
+RUN-1002 : start command "elaborate -top top"
+HDL-1007 : elaborate module top in ../src/top.v(1)
+HDL-1200 : Current top model is top
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc ../const/io.adc"
+RUN-1002 : start command "set_pin_assignment RST_N  LOCATION = K16; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[0]   LOCATION = R3; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[1]   LOCATION = J14;"
+RUN-1002 : start command "set_pin_assignment  RGB_LED[2]   LOCATION = P13;"
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "top"
+SYN-5013 WARNING: Undriven net: model "top" / net "RGB_LED[1]" in ../src/top.v(3)
+SYN-5014 WARNING: the net's pin: pin "RGB_LED[1]" in ../src/top.v(3)
+SYN-5013 WARNING: Undriven net: model "top" / net "RGB_LED[2]" in ../src/top.v(3)
+SYN-5014 WARNING: the net's pin: pin "RGB_LED[2]" in ../src/top.v(3)
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1011 : Flatten model top
+SYN-1014 : Optimize round 1
+SYN-1032 : 2/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "report_area -file project_rtl.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     4
+  #input                1
+  #output               3
+  #inout                0
+
+RUN-1001 : 
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |top    |0      |0      |0      |
++-----------------------------------------+
+
+RUN-1002 : start command "export_db project_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea project_gate.area"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+SYN-2001 : Map 4 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 6/3 useful/useless nets, 6/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 6/1 useful/useless nets, 6/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 6/1 useful/useless nets, 6/1 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
+SYN-1001 : Packing model "top" ...
+SYN-4010 : Pack lib has 42 rtl pack models with 15 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 6/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "top" (AL_USER_NORMAL) with 0/6 primitive instances ...
+RUN-1002 : start command "report_area -file project_gate.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     4
+  #input                1
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                    0   out of  19600    0.00%
+#reg                    0   out of  19600    0.00%
+#le                     0
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    4   out of    188    2.13%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++--------------------------------------+
+|Instance |Module |le    |lut   |seq   |
++--------------------------------------+
+|top      |top    |0     |0     |0     |
++--------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model top
+RUN-1002 : start command "export_db project_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+PHY-3001 : Placer runs in 4 thread(s).
+SYN-4026 : Tagged 0 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 6 instances
+RUN-1001 : 0 mslices, 0 lslices, 4 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 6 nets
+RUN-1001 : 5 nets have 2 pins
+RUN-1001 : 1 nets have [3 - 5] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 5 instances, 0 slices, 0 macros(0 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model top.
+TMR-2506 : Build timing graph completely. Port num: 2, tpin num: 10, tnet num: 5, tinst num: 5, tnode num: 10, tedge num: 7.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 7 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 5 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 0 clock pins, and constraint 0 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.003778s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (264.7%)
+
+PHY-3001 : End placement; No cells to be placed.
+RUN-1002 : start command "route"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 0 to 0
+PHY-1001 : Route runs in 4 thread(s)
+RUN-1001 : There are total 6 instances
+RUN-1001 : 0 mslices, 0 lslices, 4 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 6 nets
+RUN-1001 : 5 nets have 2 pins
+RUN-1001 : 1 nets have [3 - 5] pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 4 thread ...
+PHY-1002 : len = 784, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.013902s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (71.9%)
+
+PHY-1001 : End global routing;  0.150328s wall, 0.170000s user + 0.000000s system = 0.170000s CPU (113.1%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 0, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000021s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 0, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000019s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 16% nets.
+PHY-1002 : len = 752, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 752
+PHY-1001 : End Routed; 0.211629s wall, 0.220000s user + 0.010000s system = 0.230000s CPU (108.7%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  1.359489s wall, 1.240000s user + 0.190000s system = 1.430000s CPU (105.2%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  1.597211s wall, 1.500000s user + 0.190000s system = 1.690000s CPU (105.8%)
+
+RUN-1004 : used memory is 164 MB, reserved memory is 463 MB, peak memory is 463 MB
+RUN-1002 : start command "report_area -io_info -file project_phy.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     4
+  #input                1
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                    0   out of  19600    0.00%
+#reg                    0   out of  19600    0.00%
+#le                     0
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    4   out of    188    2.13%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db project_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit project.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances completely, inst num: 6
+BIT-1002 : Init pips completely, net num: 6, pip num: 24
+BIT-1003 : Multithreading accelaration with 4 threads.
+BIT-1003 : Generate bitstream completely, there are 46 valid insts, and 75 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file project.bit.
+RUN-1002 : start command "download -bit project.bit -mode jtag -spd 8 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit project.bit"
+PRG-3000 : BIT2VEC::JtagBitstream: completed! line_num = 1354, frame_num = 1259
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit project.bit" in  2.554338s wall, 2.600000s user + 0.030000s system = 2.630000s CPU (103.0%)
+
+RUN-1004 : used memory is 205 MB, reserved memory is 463 MB, peak memory is 463 MB
+RUN-1002 : start command "program -cable 0 -spd 8 -p"
+RUN-1003 : finish command "program -cable 0 -spd 8 -p" in  13.738849s wall, 0.820000s user + 0.560000s system = 1.380000s CPU (10.0%)
+
+RUN-1004 : used memory is 174 MB, reserved memory is 463 MB, peak memory is 463 MB
+RUN-1003 : finish command "download -bit project.bit -mode jtag -spd 8 -sec 64 -cable 0" in  16.736550s wall, 3.430000s user + 0.610000s system = 4.040000s CPU (24.1%)
+
+RUN-1004 : used memory is 164 MB, reserved memory is 463 MB, peak memory is 463 MB
+GUI-1001 : Download success!
+HDL-1007 : analyze verilog file ../src/top.v
+HDL-1007 : analyze verilog file ../src/top.v
+RUN-1002 : start command "elaborate -top top"
+HDL-1007 : elaborate module top in ../src/top.v(1)
+HDL-1200 : Current top model is top
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc ../const/io.adc"
+RUN-1002 : start command "set_pin_assignment RST_N  LOCATION = K16; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[0]   LOCATION = R3; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[1]   LOCATION = J14;"
+RUN-1002 : start command "set_pin_assignment  RGB_LED[2]   LOCATION = P13;"
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "top"
+SYN-8105 ERROR: Multi-driven net: model "top" / net "RGB_LED[0]" in ../src/top.v(3)
+SYN-8106 ERROR: the net's in pin: pin "O" in ../src/top.v(9)
+SYN-8106 ERROR: the net's in pin: pin "O" in ../src/top.v(8)
+SYN-8106 ERROR: the net's in pin: pin "O" in ../src/top.v(7)
+HDL-1007 : analyze verilog file ../src/top.v
+HDL-1007 : analyze verilog file ../src/top.v
+RUN-1002 : start command "elaborate -top top"
+HDL-1007 : elaborate module top in ../src/top.v(1)
+HDL-1200 : Current top model is top
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc ../const/io.adc"
+RUN-1002 : start command "set_pin_assignment RST_N  LOCATION = K16; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[0]   LOCATION = R3; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[1]   LOCATION = J14;"
+RUN-1002 : start command "set_pin_assignment  RGB_LED[2]   LOCATION = P13;"
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "top"
+SYN-1011 : Flatten model top
+SYN-1014 : Optimize round 1
+SYN-1032 : 2/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "report_area -file project_rtl.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     4
+  #input                1
+  #output               3
+  #inout                0
+
+RUN-1001 : 
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |top    |0      |0      |0      |
++-----------------------------------------+
+
+RUN-1002 : start command "export_db project_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea project_gate.area"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+SYN-2001 : Map 4 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 6/2 useful/useless nets, 6/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 6/1 useful/useless nets, 6/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 6/1 useful/useless nets, 6/1 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
+SYN-1001 : Packing model "top" ...
+SYN-4010 : Pack lib has 42 rtl pack models with 15 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 6/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "top" (AL_USER_NORMAL) with 0/6 primitive instances ...
+RUN-1002 : start command "report_area -file project_gate.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     4
+  #input                1
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                    0   out of  19600    0.00%
+#reg                    0   out of  19600    0.00%
+#le                     0
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    4   out of    188    2.13%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++--------------------------------------+
+|Instance |Module |le    |lut   |seq   |
++--------------------------------------+
+|top      |top    |0     |0     |0     |
++--------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model top
+RUN-1002 : start command "export_db project_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+PHY-3001 : Placer runs in 4 thread(s).
+SYN-4026 : Tagged 0 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 6 instances
+RUN-1001 : 0 mslices, 0 lslices, 4 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 6 nets
+RUN-1001 : 5 nets have 2 pins
+RUN-1001 : 1 nets have [3 - 5] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 5 instances, 0 slices, 0 macros(0 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model top.
+TMR-2506 : Build timing graph completely. Port num: 2, tpin num: 10, tnet num: 5, tinst num: 5, tnode num: 10, tedge num: 7.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 7 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 5 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 0 clock pins, and constraint 0 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.003925s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (254.8%)
+
+PHY-3001 : End placement; No cells to be placed.
+RUN-1002 : start command "route"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 0 to 0
+PHY-1001 : Route runs in 4 thread(s)
+RUN-1001 : There are total 6 instances
+RUN-1001 : 0 mslices, 0 lslices, 4 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 6 nets
+RUN-1001 : 5 nets have 2 pins
+RUN-1001 : 1 nets have [3 - 5] pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 4 thread ...
+PHY-1002 : len = 784, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.012997s wall, 0.020000s user + 0.000000s system = 0.020000s CPU (153.9%)
+
+PHY-1001 : End global routing;  0.151129s wall, 0.160000s user + 0.010000s system = 0.170000s CPU (112.5%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 0, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000017s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 0, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000021s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 16% nets.
+PHY-1002 : len = 752, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 752
+PHY-1001 : End Routed; 0.212226s wall, 0.230000s user + 0.000000s system = 0.230000s CPU (108.4%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  1.442606s wall, 1.310000s user + 0.220000s system = 1.530000s CPU (106.1%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  1.688889s wall, 1.570000s user + 0.230000s system = 1.800000s CPU (106.6%)
+
+RUN-1004 : used memory is 158 MB, reserved memory is 463 MB, peak memory is 463 MB
+RUN-1002 : start command "report_area -io_info -file project_phy.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     4
+  #input                1
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                    0   out of  19600    0.00%
+#reg                    0   out of  19600    0.00%
+#le                     0
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    4   out of    188    2.13%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db project_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit project.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances completely, inst num: 6
+BIT-1002 : Init pips completely, net num: 6, pip num: 20
+BIT-1003 : Multithreading accelaration with 4 threads.
+BIT-1003 : Generate bitstream completely, there are 46 valid insts, and 71 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file project.bit.
+HDL-1007 : analyze verilog file ../src/top.v
+HDL-1007 : analyze verilog file ../src/top.v
+RUN-1002 : start command "elaborate -top top"
+HDL-1007 : elaborate module top in ../src/top.v(1)
+HDL-1200 : Current top model is top
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc ../const/io.adc"
+RUN-1002 : start command "set_pin_assignment RST_N  LOCATION = K16; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[0]   LOCATION = R3; "
+RUN-1002 : start command "set_pin_assignment  RGB_LED[1]   LOCATION = J14;"
+RUN-1002 : start command "set_pin_assignment  RGB_LED[2]   LOCATION = P13;"
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "top"
+SYN-1011 : Flatten model top
+SYN-1014 : Optimize round 1
+SYN-1032 : 2/0 useful/useless nets, 1/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "report_area -file project_rtl.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     4
+  #input                1
+  #output               3
+  #inout                0
+
+RUN-1001 : 
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |top    |0      |0      |0      |
++-----------------------------------------+
+
+RUN-1002 : start command "export_db project_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea project_gate.area"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+SYN-2001 : Map 4 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 6/2 useful/useless nets, 6/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 6/1 useful/useless nets, 6/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 6/1 useful/useless nets, 6/1 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+SYN-2551 : Post LUT mapping optimization.
+SYN-3001 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 0 instances into 0 LUTs, name keeping = 0%.
+SYN-1001 : Packing model "top" ...
+SYN-4010 : Pack lib has 42 rtl pack models with 15 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 6/0 useful/useless insts
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 0 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4007 : Packing 0 adder to BLE ...
+SYN-4008 : Packed 0 adder and 0 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 0 LUT to BLE ...
+SYN-4008 : Packed 0 LUT and 0 SEQ to BLE.
+SYN-4003 : Packing 0 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (0 nodes)...
+SYN-4005 : Packed 0 SEQ with LUT/SLICE
+SYN-4006 : 0 single LUT's are left
+SYN-4006 : 0 single SEQ's are left
+SYN-4011 : Packing model "top" (AL_USER_NORMAL) with 0/6 primitive instances ...
+RUN-1002 : start command "report_area -file project_gate.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     4
+  #input                1
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                    0   out of  19600    0.00%
+#reg                    0   out of  19600    0.00%
+#le                     0
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    4   out of    188    2.13%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++--------------------------------------+
+|Instance |Module |le    |lut   |seq   |
++--------------------------------------+
+|top      |top    |0     |0     |0     |
++--------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model top
+RUN-1002 : start command "export_db project_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+PHY-3001 : Placer runs in 4 thread(s).
+SYN-4026 : Tagged 0 rtl::Net as clock net
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 6 instances
+RUN-1001 : 0 mslices, 0 lslices, 4 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 6 nets
+RUN-1001 : 5 nets have 2 pins
+RUN-1001 : 1 nets have [3 - 5] pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 5 instances, 0 slices, 0 macros(0 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-5001 WARNING: No sdc constraints found while initiating timer.
+TMR-2505 : Start building timing graph for model top.
+TMR-2506 : Build timing graph completely. Port num: 2, tpin num: 10, tnet num: 5, tinst num: 5, tnode num: 10, tedge num: 7.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 7 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 5 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 0 clock pins, and constraint 0 relative nodes.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.004292s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (233.0%)
+
+PHY-3001 : End placement; No cells to be placed.
+RUN-1002 : start command "route"
+RUN-1001 : Open license file /home/ghost_20/Documents/fpga/TD_RELEASE__r4.6.2/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 0 to 0
+PHY-1001 : Route runs in 4 thread(s)
+RUN-1001 : There are total 6 instances
+RUN-1001 : 0 mslices, 0 lslices, 4 pads, 0 brams, 0 dsps
+RUN-1001 : There are total 6 nets
+RUN-1001 : 5 nets have 2 pins
+RUN-1001 : 1 nets have [3 - 5] pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 4 thread ...
+PHY-1002 : len = 784, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.014284s wall, 0.020000s user + 0.000000s system = 0.020000s CPU (140.0%)
+
+PHY-1001 : End global routing;  0.155115s wall, 0.170000s user + 0.010000s system = 0.180000s CPU (116.0%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 0, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000018s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 0, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.000022s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 16% nets.
+PHY-1002 : len = 752, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 752
+PHY-1001 : End Routed; 0.221507s wall, 0.230000s user + 0.000000s system = 0.230000s CPU (103.8%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  1.378263s wall, 1.260000s user + 0.160000s system = 1.420000s CPU (103.0%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  1.623076s wall, 1.530000s user + 0.170000s system = 1.700000s CPU (104.7%)
+
+RUN-1004 : used memory is 161 MB, reserved memory is 464 MB, peak memory is 464 MB
+RUN-1002 : start command "report_area -io_info -file project_phy.area"
+RUN-1001 : standard
+***Report Model: top***
+
+IO Statistics
+#IO                     4
+  #input                1
+  #output               3
+  #inout                0
+
+Utilization Statistics
+#lut                    0   out of  19600    0.00%
+#reg                    0   out of  19600    0.00%
+#le                     0
+#dsp                    0   out of     29    0.00%
+#bram                   0   out of     64    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of     16    0.00%
+#pad                    4   out of    188    2.13%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    0   out of      4    0.00%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db project_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "bitgen -bit project.bit -version 0X00 -g ucode:00000000000000000000000000000000"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances completely, inst num: 6
+BIT-1002 : Init pips completely, net num: 6, pip num: 20
+BIT-1003 : Multithreading accelaration with 4 threads.
+BIT-1003 : Generate bitstream completely, there are 46 valid insts, and 71 bits set as '1'.
+BIT-1004 : PLL setting string = 0000
+BIT-1004 : Generate bits file project.bit.
+RUN-1002 : start command "download -bit project.bit -mode jtag -spd 8 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EAGLE_S20_BG256
+RUN-1002 : start command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit project.bit"
+PRG-3000 : BIT2VEC::JtagBitstream: completed! line_num = 1354, frame_num = 1259
+RUN-1003 : finish command "bit_to_vec -chip EAGLE_S20_BG256 -m jtag -bit project.bit" in  2.603701s wall, 2.640000s user + 0.030000s system = 2.670000s CPU (102.5%)
+
+RUN-1004 : used memory is 209 MB, reserved memory is 464 MB, peak memory is 464 MB
+RUN-1002 : start command "program -cable 0 -spd 8 -p"
+RUN-1003 : finish command "program -cable 0 -spd 8 -p" in  13.728935s wall, 0.700000s user + 0.450000s system = 1.150000s CPU (8.4%)
+
+RUN-1004 : used memory is 180 MB, reserved memory is 464 MB, peak memory is 464 MB
+RUN-1003 : finish command "download -bit project.bit -mode jtag -spd 8 -sec 64 -cable 0" in  16.772312s wall, 3.370000s user + 0.490000s system = 3.860000s CPU (23.0%)
+
+RUN-1004 : used memory is 169 MB, reserved memory is 464 MB, peak memory is 464 MB
+GUI-1001 : Download success!

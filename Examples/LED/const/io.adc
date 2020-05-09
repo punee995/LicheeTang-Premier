@@ -1,0 +1,8 @@
+## USER BUTTON
+set_pin_assignment {RST_N} { LOCATION = K16; }		##USER_KEY
+
+
+## LED
+set_pin_assignment	{ RGB_LED[0] }	{ LOCATION = R3; } ## LED RED
+set_pin_assignment	{ RGB_LED[1] }	{ LOCATION = J14;} ## LED BLUE
+set_pin_assignment	{ RGB_LED[2] }	{ LOCATION = P13;} ## LED GREEN

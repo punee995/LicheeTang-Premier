@@ -1,0 +1,15 @@
+standard
+***Report Model: top***
+
+IO Statistics
+#IO                     4
+  #input                1
+  #output               3
+  #inout                0
+
+Report Hierarchy Area:
++-----------------------------------------+
+|Instance |Module |gates  |seq    |macros |
++-----------------------------------------+
+|top      |top    |0      |0      |0      |
++-----------------------------------------+
